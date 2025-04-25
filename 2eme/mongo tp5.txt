@@ -1,0 +1,34 @@
+1: db.Sportifs.find({Age:{$gte:20},Age:{$lte:30}})
+
+2:db.Gymnases.aggregate([{$match:{NomGymnase:{$in:['Villetaneuse','Sarcelles']}}},{$group:{_id:'$NomGymnase',surface:'$Surface'}},{$match:{surface:{$gt:400}}},{$project:{_id:1,surface:1}}])
+
+3: db.Sportifs.find({'Sports.Jouer':'Hand ball'},{_id:1,Nom:1})
+
+4:db.Gymnases.find({'Seances.Libelle':'Hand ball'},{NomGymnase:1,'Seances.Jour':1})
+
+5: db.Gymnases.find({Seances:{$elemMatch:{Jour:'mercredi',Libelle:'Hockey',Horaire:{$gt:15}}}})
+
+6: db.Sportifs.find({'Sports.Jouer':{$exists:false}},{_id:1,Nom:1})
+
+7: db.Gymnases.find({'Seances.Jour':{$nin:['dimanche','Dimanche']}})
+
+8: db.Gymnases.find({'Seances.Libelle':'Basket ball','Seances.Libelle':'Hand ball'})
+
+9: db.Sportifs.find({'Sports.Jouer':{$exists:true},'Sports.Entrainer':{$exists:true}})
+
+10: db.Sportifs.find({'Sports.Entrainer':{$in:['Hand ball','Basket ball']}})
+
+11:db.Sportifs.aggregate([{$unwind:'$Sports'},{$match:{'Sports.Jouer':'Basket ball'}},{$group:{_id:null,moyAge:{$avg:'$Age'}}}])
+
+12:db.Sportifs.aggregate([{$sort:{Age:1}},{$limit:3},{$project:{Nom:1,Age:1}}])
+
+13:db.Sportifs.aggregate([{$match:{IdSportifConseiller:{$exists:false}}},{$group:{_id:'$Nom'}}])
+
+14: db.Sportifs.aggregate([{$unwind:'$Sports'},{$project:{Nom:1,nbSports:{$size:'$Sports.Arbitrer'},_id:0}}])
+
+15:db.Gymnases.aggregate([{$unwind:'$Seances'},{$match:{'Seances.Libelle':'Hand ball'}},{$group:{_id:{Entraineur:'$Seances.IdSportifEntraineur',Jour:'$Seances.Jour'},seance:{$push:'$Seances'}}},{$project:{_id:1,nbSeance:{$size:'$seance'}}}])
+
+16:db.Gymnases.aggregate([{ $unwind: '$Seances' },{$match:{'Seances.Jour':{$in:['mercredi','Mercredi']}}},{$group:{_id:{ident:'$_id',nom:'$NomGymnase'},seance:{$push:'$Seances'}}}])
+
+
+

@@ -1,0 +1,4 @@
+db.users.insert([{_id:1,name:'abdou chlaikhy',age:'22',adresse:'61 Rue 59 av Des Pleides'},
+			{_id:2,name:'med ait hamou',age:'20',adresse:'Twal Houk'},
+			{_id:2,name:'simo',age:'19',adresse:'Darwa'},
+			{_id:3,name:'reda',age:'20',adresse:'Media'}])

@@ -1,0 +1,62 @@
+	1)
+
+
+
+CREATE PROCEDURE insert_consultation(
+    IN num_matricule INT,
+    IN num_secu INT,
+    IN date_consultation DATE,
+    IN heure_consultation TIME,
+    IN duree INT,
+    IN prix FLOAT
+)
+BEGIN
+    DECLARE code_contrat INT DEFAULT 1;
+    
+    SELECT code_contrat FROM CONSULTE ORDER BY code_contrat DESC LIMIT 1 INTO code_contrat;
+    code_contrat = code_contrat + 1;
+    
+    IF EXISTS (SELECT * FROM MEDECIN WHERE num_matricule = num_matricule) AND
+       EXISTS (SELECT * FROM PATIENT WHERE num_secu = num_secu) THEN
+        INSERT INTO CONSULTE (code_contrat, num_matricule, num_secu, date_consultation, heure_consultation, duree, prix)
+        VALUES (code_contrat, num_matricule, num_secu, date_consultation, heure_consultation, duree, prix);
+    ELSEIF NOT EXISTS (SELECT * FROM MEDECIN WHERE num_matricule = num_matricule) THEN
+        SELECT "Le médecin n'existe pas dans la base de données" AS message;
+    ELSEIF NOT EXISTS (SELECT * FROM PATIENT WHERE num_secu = num_secu) THEN
+        SELECT "Le patient n'existe pas dans la base de données" AS message;
+    END IF;
+END
+
+
+
+	2)
+
+
+
+CREATE PROCEDURE total_consultation_price(IN num_secu INT)
+BEGIN
+    SELECT SUM(prix) FROM CONSULTE WHERE num_secu = num_secu INTO @total_price;
+    SELECT @total_price AS total_price;
+END
+
+-- Jeu d'essai
+CALL total_consultation_price(1234567890);
+
+
+
+
+	3)
+
+
+ CREATE PROCEDURE delete_patients_without_consultations(IN date_consultation DATE)
+BEGIN
+    DELETE FROM PATIENT WHERE num_secu NOT IN (SELECT num_secu FROM CONSULTE WHERE date_consultation >= date_consultation);
+END
+
+
+
+	4)
+
+CREATE FUNCTION consultation_end_time(IN code_contrat INT) RETURNS TIME
+BEGIN
+    SELECT heure_consultation + INTERVAL

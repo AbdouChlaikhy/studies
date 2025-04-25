@@ -1,0 +1,901 @@
+[{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2a2"
+  },
+  "Code": "ABW",
+  "Name": "Aruba",
+  "Continent": "North America",
+  "Region": "Caribbean",
+  "SurfaceArea": 193,
+  "Population": 103000,
+  "LifeExpectancy": 78.4,
+  "GNP": 828,
+  "GNPOld": 793,
+  "LocalName": "Aruba",
+  "GovernmentForm": "Nonmetropolitan Territory of The Netherlands",
+  "HeadOfState": "Beatrix",
+  "Code2": "AW",
+  "Cities": [
+    {
+      "ID": 129,
+      "Name": "Oranjestad",
+      "District": "–",
+      "Population": 29034,
+      "Capital": true
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "Dutch",
+      "IsOfficial": true,
+      "Percentage": 5.3
+    },
+    {
+      "Language": "English",
+      "IsOfficial": false,
+      "Percentage": 9.5
+    },
+    {
+      "Language": "Papiamento",
+      "IsOfficial": false,
+      "Percentage": 76.7
+    },
+    {
+      "Language": "Spanish",
+      "IsOfficial": false,
+      "Percentage": 7.4
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2a3"
+  },
+  "Code": "AFG",
+  "Name": "Afghanistan",
+  "Continent": "Asia",
+  "Region": "Southern and Central Asia",
+  "SurfaceArea": 652090,
+  "IndepYear": 1919,
+  "Population": 22720000,
+  "LifeExpectancy": 45.9,
+  "GNP": 5976,
+  "LocalName": "Afganistan/Afqanestan",
+  "GovernmentForm": "Islamic Emirate",
+  "HeadOfState": "Mohammad Omar",
+  "Code2": "AF",
+  "Cities": [
+    {
+      "ID": 1,
+      "Name": "Kabul",
+      "District": "Kabol",
+      "Population": 1780000,
+      "Capital": true
+    },
+    {
+      "ID": 2,
+      "Name": "Qandahar",
+      "District": "Qandahar",
+      "Population": 237500,
+      "Capital": false
+    },
+    {
+      "ID": 3,
+      "Name": "Herat",
+      "District": "Herat",
+      "Population": 186800,
+      "Capital": false
+    },
+    {
+      "ID": 4,
+      "Name": "Mazar-e-Sharif",
+      "District": "Balkh",
+      "Population": 127800,
+      "Capital": false
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "Balochi",
+      "IsOfficial": false,
+      "Percentage": 0.9
+    },
+    {
+      "Language": "Dari",
+      "IsOfficial": true,
+      "Percentage": 32.1
+    },
+    {
+      "Language": "Pashto",
+      "IsOfficial": true,
+      "Percentage": 52.4
+    },
+    {
+      "Language": "Turkmenian",
+      "IsOfficial": false,
+      "Percentage": 1.9
+    },
+    {
+      "Language": "Uzbek",
+      "IsOfficial": false,
+      "Percentage": 8.8
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2a4"
+  },
+  "Code": "AGO",
+  "Name": "Angola",
+  "Continent": "Africa",
+  "Region": "Central Africa",
+  "SurfaceArea": 1246700,
+  "IndepYear": 1975,
+  "Population": 12878000,
+  "LifeExpectancy": 38.3,
+  "GNP": 6648,
+  "GNPOld": 7984,
+  "LocalName": "Angola",
+  "GovernmentForm": "Republic",
+  "HeadOfState": "José Eduardo dos Santos",
+  "Code2": "AO",
+  "Cities": [
+    {
+      "ID": 56,
+      "Name": "Luanda",
+      "District": "Luanda",
+      "Population": 2022000,
+      "Capital": true
+    },
+    {
+      "ID": 57,
+      "Name": "Huambo",
+      "District": "Huambo",
+      "Population": 163100,
+      "Capital": false
+    },
+    {
+      "ID": 58,
+      "Name": "Lobito",
+      "District": "Benguela",
+      "Population": 130000,
+      "Capital": false
+    },
+    {
+      "ID": 59,
+      "Name": "Benguela",
+      "District": "Benguela",
+      "Population": 128300,
+      "Capital": false
+    },
+    {
+      "ID": 60,
+      "Name": "Namibe",
+      "District": "Namibe",
+      "Population": 118200,
+      "Capital": false
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "Ambo",
+      "IsOfficial": false,
+      "Percentage": 2.4
+    },
+    {
+      "Language": "Chokwe",
+      "IsOfficial": false,
+      "Percentage": 4.2
+    },
+    {
+      "Language": "Kongo",
+      "IsOfficial": false,
+      "Percentage": 13.2
+    },
+    {
+      "Language": "Luchazi",
+      "IsOfficial": false,
+      "Percentage": 2.4
+    },
+    {
+      "Language": "Luimbe-nganguela",
+      "IsOfficial": false,
+      "Percentage": 5.4
+    },
+    {
+      "Language": "Luvale",
+      "IsOfficial": false,
+      "Percentage": 3.6
+    },
+    {
+      "Language": "Mbundu",
+      "IsOfficial": false,
+      "Percentage": 21.6
+    },
+    {
+      "Language": "Nyaneka-nkhumbi",
+      "IsOfficial": false,
+      "Percentage": 5.4
+    },
+    {
+      "Language": "Ovimbundu",
+      "IsOfficial": false,
+      "Percentage": 37.2
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2a5"
+  },
+  "Code": "AIA",
+  "Name": "Anguilla",
+  "Continent": "North America",
+  "Region": "Caribbean",
+  "SurfaceArea": 96,
+  "Population": 8000,
+  "LifeExpectancy": 76.1,
+  "GNP": 63.2,
+  "LocalName": "Anguilla",
+  "GovernmentForm": "Dependent Territory of the UK",
+  "HeadOfState": "Elisabeth II",
+  "Code2": "AI",
+  "Cities": [
+    {
+      "ID": 61,
+      "Name": "South Hill",
+      "District": "–",
+      "Population": 961,
+      "Capital": false
+    },
+    {
+      "ID": 62,
+      "Name": "The Valley",
+      "District": "–",
+      "Population": 595,
+      "Capital": true
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "English",
+      "IsOfficial": true,
+      "Percentage": 0
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2a6"
+  },
+  "Code": "ALB",
+  "Name": "Albania",
+  "Continent": "Europe",
+  "Region": "Southern Europe",
+  "SurfaceArea": 28748,
+  "IndepYear": 1912,
+  "Population": 3401200,
+  "LifeExpectancy": 71.6,
+  "GNP": 3205,
+  "GNPOld": 2500,
+  "LocalName": "Shqipëria",
+  "GovernmentForm": "Republic",
+  "HeadOfState": "Rexhep Mejdani",
+  "Code2": "AL",
+  "Cities": [
+    {
+      "ID": 34,
+      "Name": "Tirana",
+      "District": "Tirana",
+      "Population": 270000,
+      "Capital": true
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "Albaniana",
+      "IsOfficial": true,
+      "Percentage": 97.9
+    },
+    {
+      "Language": "Greek",
+      "IsOfficial": false,
+      "Percentage": 1.8
+    },
+    {
+      "Language": "Macedonian",
+      "IsOfficial": false,
+      "Percentage": 0.1
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2a7"
+  },
+  "Code": "AND",
+  "Name": "Andorra",
+  "Continent": "Europe",
+  "Region": "Southern Europe",
+  "SurfaceArea": 468,
+  "IndepYear": 1278,
+  "Population": 78000,
+  "LifeExpectancy": 83.5,
+  "GNP": 1630,
+  "LocalName": "Andorra",
+  "GovernmentForm": "Parliamentary Coprincipality",
+  "HeadOfState": "",
+  "Code2": "AD",
+  "Cities": [
+    {
+      "ID": 55,
+      "Name": "Andorra la Vella",
+      "District": "Andorra la Vella",
+      "Population": 21189,
+      "Capital": true
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "Catalan",
+      "IsOfficial": true,
+      "Percentage": 32.3
+    },
+    {
+      "Language": "French",
+      "IsOfficial": false,
+      "Percentage": 6.2
+    },
+    {
+      "Language": "Portuguese",
+      "IsOfficial": false,
+      "Percentage": 10.8
+    },
+    {
+      "Language": "Spanish",
+      "IsOfficial": false,
+      "Percentage": 44.6
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2a8"
+  },
+  "Code": "ANT",
+  "Name": "Netherlands Antilles",
+  "Continent": "North America",
+  "Region": "Caribbean",
+  "SurfaceArea": 800,
+  "Population": 217000,
+  "LifeExpectancy": 74.7,
+  "GNP": 1941,
+  "LocalName": "Nederlandse Antillen",
+  "GovernmentForm": "Nonmetropolitan Territory of The Netherlands",
+  "HeadOfState": "Beatrix",
+  "Code2": "AN",
+  "Cities": [
+    {
+      "ID": 33,
+      "Name": "Willemstad",
+      "District": "Curaçao",
+      "Population": 2345,
+      "Capital": true
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "Dutch",
+      "IsOfficial": true,
+      "Percentage": 0
+    },
+    {
+      "Language": "English",
+      "IsOfficial": false,
+      "Percentage": 7.8
+    },
+    {
+      "Language": "Papiamento",
+      "IsOfficial": true,
+      "Percentage": 86.2
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2a9"
+  },
+  "Code": "ARE",
+  "Name": "United Arab Emirates",
+  "Continent": "Asia",
+  "Region": "Middle East",
+  "SurfaceArea": 83600,
+  "IndepYear": 1971,
+  "Population": 2441000,
+  "LifeExpectancy": 74.1,
+  "GNP": 37966,
+  "GNPOld": 36846,
+  "LocalName": "Al-Imarat al-´Arabiya al-Muttahida",
+  "GovernmentForm": "Emirate Federation",
+  "HeadOfState": "Zayid bin Sultan al-Nahayan",
+  "Code2": "AE",
+  "Cities": [
+    {
+      "ID": 64,
+      "Name": "Dubai",
+      "District": "Dubai",
+      "Population": 669181,
+      "Capital": false
+    },
+    {
+      "ID": 65,
+      "Name": "Abu Dhabi",
+      "District": "Abu Dhabi",
+      "Population": 398695,
+      "Capital": true
+    },
+    {
+      "ID": 66,
+      "Name": "Sharja",
+      "District": "Sharja",
+      "Population": 320095,
+      "Capital": false
+    },
+    {
+      "ID": 67,
+      "Name": "al-Ayn",
+      "District": "Abu Dhabi",
+      "Population": 225970,
+      "Capital": false
+    },
+    {
+      "ID": 68,
+      "Name": "Ajman",
+      "District": "Ajman",
+      "Population": 114395,
+      "Capital": false
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "Arabic",
+      "IsOfficial": true,
+      "Percentage": 42
+    },
+    {
+      "Language": "Hindi",
+      "IsOfficial": false,
+      "Percentage": 0
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "601a760674e3292b3f5ea2aa"
+  },
+  "Code": "ARG",
+  "Name": "Argentina",
+  "Continent": "South America",
+  "Region": "South America",
+  "SurfaceArea": 2780400,
+  "IndepYear": 1816,
+  "Population": 37032000,
+  "LifeExpectancy": 75.1,
+  "GNP": 340238,
+  "GNPOld": 323310,
+  "LocalName": "Argentina",
+  "GovernmentForm": "Federal Republic",
+  "HeadOfState": "Fernando de la Rúa",
+  "Code2": "AR",
+  "Cities": [
+    {
+      "ID": 69,
+      "Name": "Buenos Aires",
+      "District": "Distrito Federal",
+      "Population": 2982146,
+      "Capital": true
+    },
+    {
+      "ID": 70,
+      "Name": "La Matanza",
+      "District": "Buenos Aires",
+      "Population": 1266461,
+      "Capital": false
+    },
+    {
+      "ID": 71,
+      "Name": "Córdoba",
+      "District": "Córdoba",
+      "Population": 1157507,
+      "Capital": false
+    },
+    {
+      "ID": 72,
+      "Name": "Rosario",
+      "District": "Santa Fé",
+      "Population": 907718,
+      "Capital": false
+    },
+    {
+      "ID": 73,
+      "Name": "Lomas de Zamora",
+      "District": "Buenos Aires",
+      "Population": 622013,
+      "Capital": false
+    },
+    {
+      "ID": 74,
+      "Name": "Quilmes",
+      "District": "Buenos Aires",
+      "Population": 559249,
+      "Capital": false
+    },
+    {
+      "ID": 75,
+      "Name": "Almirante Brown",
+      "District": "Buenos Aires",
+      "Population": 538918,
+      "Capital": false
+    },
+    {
+      "ID": 76,
+      "Name": "La Plata",
+      "District": "Buenos Aires",
+      "Population": 521936,
+      "Capital": false
+    },
+    {
+      "ID": 77,
+      "Name": "Mar del Plata",
+      "District": "Buenos Aires",
+      "Population": 512880,
+      "Capital": false
+    },
+    {
+      "ID": 78,
+      "Name": "San Miguel de Tucumán",
+      "District": "Tucumán",
+      "Population": 470809,
+      "Capital": false
+    },
+    {
+      "ID": 79,
+      "Name": "Lanús",
+      "District": "Buenos Aires",
+      "Population": 469735,
+      "Capital": false
+    },
+    {
+      "ID": 80,
+      "Name": "Merlo",
+      "District": "Buenos Aires",
+      "Population": 463846,
+      "Capital": false
+    },
+    {
+      "ID": 81,
+      "Name": "General San Martín",
+      "District": "Buenos Aires",
+      "Population": 422542,
+      "Capital": false
+    },
+    {
+      "ID": 82,
+      "Name": "Salta",
+      "District": "Salta",
+      "Population": 367550,
+      "Capital": false
+    },
+    {
+      "ID": 83,
+      "Name": "Moreno",
+      "District": "Buenos Aires",
+      "Population": 356993,
+      "Capital": false
+    },
+    {
+      "ID": 84,
+      "Name": "Santa Fé",
+      "District": "Santa Fé",
+      "Population": 353063,
+      "Capital": false
+    },
+    {
+      "ID": 85,
+      "Name": "Avellaneda",
+      "District": "Buenos Aires",
+      "Population": 353046,
+      "Capital": false
+    },
+    {
+      "ID": 86,
+      "Name": "Tres de Febrero",
+      "District": "Buenos Aires",
+      "Population": 352311,
+      "Capital": false
+    },
+    {
+      "ID": 87,
+      "Name": "Morón",
+      "District": "Buenos Aires",
+      "Population": 349246,
+      "Capital": false
+    },
+    {
+      "ID": 88,
+      "Name": "Florencio Varela",
+      "District": "Buenos Aires",
+      "Population": 315432,
+      "Capital": false
+    },
+    {
+      "ID": 89,
+      "Name": "San Isidro",
+      "District": "Buenos Aires",
+      "Population": 306341,
+      "Capital": false
+    },
+    {
+      "ID": 90,
+      "Name": "Tigre",
+      "District": "Buenos Aires",
+      "Population": 296226,
+      "Capital": false
+    },
+    {
+      "ID": 91,
+      "Name": "Malvinas Argentinas",
+      "District": "Buenos Aires",
+      "Population": 290335,
+      "Capital": false
+    },
+    {
+      "ID": 92,
+      "Name": "Vicente López",
+      "District": "Buenos Aires",
+      "Population": 288341,
+      "Capital": false
+    },
+    {
+      "ID": 93,
+      "Name": "Berazategui",
+      "District": "Buenos Aires",
+      "Population": 276916,
+      "Capital": false
+    },
+    {
+      "ID": 94,
+      "Name": "Corrientes",
+      "District": "Corrientes",
+      "Population": 258103,
+      "Capital": false
+    },
+    {
+      "ID": 95,
+      "Name": "San Miguel",
+      "District": "Buenos Aires",
+      "Population": 248700,
+      "Capital": false
+    },
+    {
+      "ID": 96,
+      "Name": "Bahía Blanca",
+      "District": "Buenos Aires",
+      "Population": 239810,
+      "Capital": false
+    },
+    {
+      "ID": 97,
+      "Name": "Esteban Echeverría",
+      "District": "Buenos Aires",
+      "Population": 235760,
+      "Capital": false
+    },
+    {
+      "ID": 98,
+      "Name": "Resistencia",
+      "District": "Chaco",
+      "Population": 229212,
+      "Capital": false
+    },
+    {
+      "ID": 99,
+      "Name": "José C. Paz",
+      "District": "Buenos Aires",
+      "Population": 221754,
+      "Capital": false
+    },
+    {
+      "ID": 100,
+      "Name": "Paraná",
+      "District": "Entre Rios",
+      "Population": 207041,
+      "Capital": false
+    },
+    {
+      "ID": 101,
+      "Name": "Godoy Cruz",
+      "District": "Mendoza",
+      "Population": 206998,
+      "Capital": false
+    },
+    {
+      "ID": 102,
+      "Name": "Posadas",
+      "District": "Misiones",
+      "Population": 201273,
+      "Capital": false
+    },
+    {
+      "ID": 103,
+      "Name": "Guaymallén",
+      "District": "Mendoza",
+      "Population": 200595,
+      "Capital": false
+    },
+    {
+      "ID": 104,
+      "Name": "Santiago del Estero",
+      "District": "Santiago del Estero",
+      "Population": 189947,
+      "Capital": false
+    },
+    {
+      "ID": 105,
+      "Name": "San Salvador de Jujuy",
+      "District": "Jujuy",
+      "Population": 178748,
+      "Capital": false
+    },
+    {
+      "ID": 106,
+      "Name": "Hurlingham",
+      "District": "Buenos Aires",
+      "Population": 170028,
+      "Capital": false
+    },
+    {
+      "ID": 107,
+      "Name": "Neuquén",
+      "District": "Neuquén",
+      "Population": 167296,
+      "Capital": false
+    },
+    {
+      "ID": 108,
+      "Name": "Ituzaingó",
+      "District": "Buenos Aires",
+      "Population": 158197,
+      "Capital": false
+    },
+    {
+      "ID": 109,
+      "Name": "San Fernando",
+      "District": "Buenos Aires",
+      "Population": 153036,
+      "Capital": false
+    },
+    {
+      "ID": 110,
+      "Name": "Formosa",
+      "District": "Formosa",
+      "Population": 147636,
+      "Capital": false
+    },
+    {
+      "ID": 111,
+      "Name": "Las Heras",
+      "District": "Mendoza",
+      "Population": 145823,
+      "Capital": false
+    },
+    {
+      "ID": 112,
+      "Name": "La Rioja",
+      "District": "La Rioja",
+      "Population": 138117,
+      "Capital": false
+    },
+    {
+      "ID": 113,
+      "Name": "San Fernando del Valle de Cata",
+      "District": "Catamarca",
+      "Population": 134935,
+      "Capital": false
+    },
+    {
+      "ID": 114,
+      "Name": "Río Cuarto",
+      "District": "Córdoba",
+      "Population": 134355,
+      "Capital": false
+    },
+    {
+      "ID": 115,
+      "Name": "Comodoro Rivadavia",
+      "District": "Chubut",
+      "Population": 124104,
+      "Capital": false
+    },
+    {
+      "ID": 116,
+      "Name": "Mendoza",
+      "District": "Mendoza",
+      "Population": 123027,
+      "Capital": false
+    },
+    {
+      "ID": 117,
+      "Name": "San Nicolás de los Arroyos",
+      "District": "Buenos Aires",
+      "Population": 119302,
+      "Capital": false
+    },
+    {
+      "ID": 118,
+      "Name": "San Juan",
+      "District": "San Juan",
+      "Population": 119152,
+      "Capital": false
+    },
+    {
+      "ID": 119,
+      "Name": "Escobar",
+      "District": "Buenos Aires",
+      "Population": 116675,
+      "Capital": false
+    },
+    {
+      "ID": 120,
+      "Name": "Concordia",
+      "District": "Entre Rios",
+      "Population": 116485,
+      "Capital": false
+    },
+    {
+      "ID": 121,
+      "Name": "Pilar",
+      "District": "Buenos Aires",
+      "Population": 113428,
+      "Capital": false
+    },
+    {
+      "ID": 122,
+      "Name": "San Luis",
+      "District": "San Luis",
+      "Population": 110136,
+      "Capital": false
+    },
+    {
+      "ID": 123,
+      "Name": "Ezeiza",
+      "District": "Buenos Aires",
+      "Population": 99578,
+      "Capital": false
+    },
+    {
+      "ID": 124,
+      "Name": "San Rafael",
+      "District": "Mendoza",
+      "Population": 94651,
+      "Capital": false
+    },
+    {
+      "ID": 125,
+      "Name": "Tandil",
+      "District": "Buenos Aires",
+      "Population": 91101,
+      "Capital": false
+    }
+  ],
+  "Languages": [
+    {
+      "Language": "Indian Languages",
+      "IsOfficial": false,
+      "Percentage": 0.3
+    },
+    {
+      "Language": "Italian",
+      "IsOfficial": false,
+      "Percentage": 1.7
+    },
+    {
+      "Language": "Spanish",
+      "IsOfficial": true,
+      "Percentage": 96.8
+    }
+  ]
+}]

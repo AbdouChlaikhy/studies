@@ -1,0 +1,5 @@
+natija> db.stagiaire.insert([{Nom:"ziad",Prenom:"samsari",adresse:"lbayda",notes:[{Module:"M1",note:16},{Module:"M2",note:14}]},{Nom:"Chlaikhy",Prenom:"Abdou",adresse:"l'hermitage",notes:[{Module:"M1",note:9},{Module:"M2",note:19}]},{Nom:"Alami",Prenom:"Yasser",adresse:'famagosta',notes:[{Module:"M1",note:1},{Module:"M2",note:2}]}])
+
+natija> db.stagiaire.aggregate([{$project:{moyenne:{$avg:"$notes.note"}}}])
+
+natija> db.stagiaire.aggregate([{$project:{moyenne:{$avg:"$notes.note"}}},{$project:{Nom:1,Prenom:1,decision:{$cond:{if:{$gte:["$moyenne",10]},then:"Admis",else:"Redoublant"}}}}])
