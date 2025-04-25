@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4baaba0022174dc0982235403cd9b273" Name="Diagram1" ZoomLevel="84">
+        <EntityTypeShape EntityType="DB_UtilisateursModel.Application" Width="1.5" PointX="7.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_UtilisateursModel.Application_Role_Autorisations" Width="1.5" PointX="5.5" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_UtilisateursModel.Autorisation" Width="1.5" PointX="5.5" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_UtilisateursModel.Role" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_UtilisateursModel.Utilisateur_Role" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_UtilisateursModel.Utilisateurs" Width="1.5" PointX="0.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_UtilisateursModel.User_Permissions" Width="1.5" PointX="8" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="DB_UtilisateursModel.FK__Applicati__id_Ap__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_UtilisateursModel.FK__Applicati__id_au__4316F928" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_UtilisateursModel.FK__Applicati__id_ut__440B1D61" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_UtilisateursModel.FK__Utilisate__id_ro__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_UtilisateursModel.FK__Utilisate__id_ut__45F365D3" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
