@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rText{
+            margin: 0px;;
+        }
+        .correct{
+            background-color: #069b06;
+            color: #FFF
+        }
+
+        .not-correct{
+            background-color: #f00;
+            color: #FFF
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="list">
+    </div>
+    <button id="btn">Show Answers</button>
+    
+<script src="js/jquery.min.js"></script>
+    <script>
+
+     
+        let listJSONQuestions = `[{"id":1,
+        "text":"A",
+        "reponses":
+        [{"text":"A1","isCorrect":false},
+        {"text":"A2","isCorrect":true},
+        {"text":"A3","isCorrect":false}
+        ]},
+        {"id":2,
+        "text":"B",
+        "reponses":
+        [{"text":"B1","isCorrect":false},
+        {"text":"B2","isCorrect":false},
+        {"text":"B3","isCorrect":true}
+        ]},
+        {"id":3,
+        "text":"C",
+        "reponses":
+        [{"text":"C1","isCorrect":false},
+        {"text":"C2","isCorrect":false},
+        {"text":"C3","isCorrect":true}
+        ]}
+        ]`;
+
+        let listObjectQuestions = JSON.parse(listJSONQuestions);
+
+        for(let i = 0; i < listObjectQuestions.length; i++){
+            let q = listObjectQuestions[i];
+           let html = '<div class="qClass" id="q'+q.id+'">';
+           html += ' <h2>Question '+ (i+1) +'</h2>';
+           html += '<p class="qText">'+q.text+'</p>';
+              for(let j = 0; j < q.reponses.length; j++){
+                  html += '<p class="rText"><input type="radio" class="c_'+q.id+'" is_correct="'+(q.reponses[j].isCorrect === true ? 1 : 0)+'" name="q'+q.id+'"/> &nbsp;<span>'+q.reponses[j].text+'</span></p>';
+              }
+           html += '</div>';
+          $('#list').append(html);
+        }
+
+$('#btn').click(function(e){
+    e.preventDefault();
+    for(let i = 0; i < listObjectQuestions.length; i++){
+        let q = listObjectQuestions[i];
+        let reponse = $('.c_'+q.id+':checked').attr('is_correct') == 1;
+       
+       
+    }
+
+});
+        console.log(listObjectQuestions);
+
+    </script>
+</body>
+</html>
