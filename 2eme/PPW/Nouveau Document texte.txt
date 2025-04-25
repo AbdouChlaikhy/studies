@@ -1,0 +1,44 @@
+Nom         : emprunter un livre
+objectif    : un Adherent qui veut emprunter un livre pour qu'il puisse le lire chez lui
+A-principal : un adherent
+A-Secondaire : bibliothecaire
+post-conditions : adhesion validee, adherent a retourner dernier livre emprunté
+Even-declencheur  : lorsque l'adherent demande une emprunte 
+pre_conditions : adherent a choisit le livre souhaité, 
+
+---------------------------------------------------------------------------------
+|          action du client             |        reponse du systeme             |
+|                                       |                                       |
+---------------------------------------------------------------------------------
+| 1-le bibliothecaire scan la carte de  | 2- verifie l'identité de l'adherent   |
+|              l'adherent               |                                       |
+| 3-le bib scan le livre a emprunter    | 4- identifier le livre et enregistrer |
+|                                       |               l'emprunt               |
+---------------------------------------------------------------------------------
+
+
+              Enchainement Alternatif:
+              ------------------------
+
+1- carte illisible : -Démarre au point 1 du SN
+			   -Saisir le cide manuellement, reprend au point 2 
+2- 3eme livre      : -Démarre au point 4 SN
+                     -Bloquer le compte
+
+
+              Echainement Erreur:
+              -------------------
+
+1- Compte Bloqué         : -Démarre au point 2 
+                           -Echec sys
+2- livre non empruntable : -5 annuler l'emprunt
+                           - echec sys
+
+                   
+
+
+
+
+
+
+   
