@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Calculatrice</ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="calculator-container">
+
+    <h1 class="calculator-title">
+      Smart Calculator
+    </h1>
+
+    <div class="calc-display">
+      {{ result || '0' }}
+    </div>
+
+    <ion-grid>
+
+      <ion-row *ngFor="let row of [['C','/'], [7,8,9,'*'], [4,5,6,'-'], [1,2,3,'+'], [0, '=']]">
+
+        <ion-col
+          *ngFor="let btn of row"
+          [size]="btn === 'C' || btn === '=' ? '6' : '3'">
+
+          <ion-button
+            (click)="press(btn)"
+            expand="block"
+            [color]="btn === '=' ? 'success' : 'light'">
+
+            {{ btn }}
+
+          </ion-button>
+
+        </ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+
+  </div>
+
+</ion-content>

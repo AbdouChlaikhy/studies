@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>MY APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <div id="container">
+    <br><br>
+    <ion-text color="dark">
+      <h1>MyInoicApp</h1>
+    </ion-text>
+    <br>
+
+    <ion-button expand="block" color="primary" routerLink="/widgets">
+      <ion-icon name="apps-outline" slot="start"></ion-icon>
+      Widgets
+    </ion-button>
+
+    <ion-button expand="block" color="secondary" routerLink="/calculatrice">
+      <ion-icon name="calculator-outline" slot="start"></ion-icon>
+      Calculs
+    </ion-button>
+
+    <ion-button expand="block" color="success" routerLink="/camera">
+      <ion-icon name="camera-outline" slot="start"></ion-icon>
+      Camera
+    </ion-button>
+
+    <ion-button expand="block" color="warning" routerLink="/weather">
+      <ion-icon name="cloudy-night-outline" slot="start"></ion-icon>
+      Weather
+    </ion-button>
+  </div>
+</ion-content>

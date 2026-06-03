@@ -1,0 +1,76 @@
+/* Background */
+ion-content {
+  --background: linear-gradient(135deg, #0f172a, #1e293b);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main container */
+#container {
+  margin-top: 40px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* Title */
+#container h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Toolbar */
+ion-toolbar {
+  --background: transparent;
+  --color: white;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Buttons */
+ion-button {
+  margin-top: 18px;
+  height: 56px;
+  font-size: 1rem;
+  font-weight: 600;
+
+  --border-radius: 18px;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+ion-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Icons */
+ion-icon {
+  font-size: 1.3rem;
+}
+
+/* Optional custom colors */
+ion-button[color="primary"] {
+  --background: #3b82f6;
+}
+
+ion-button[color="secondary"] {
+  --background: #8b5cf6;
+}
+
+ion-button[color="success"] {
+  --background: #10b981;
+}
+
+ion-button[color="warning"] {
+  --background: #f59e0b;
+  --color: #111827;
+}

@@ -1,0 +1,85 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start"><ion-back-button defaultHref="/home"></ion-back-button></ion-buttons>
+    <ion-title>UI Master Showcase</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  
+  <ion-text color="danger"><h2>Interactive Alert</h2></ion-text>
+  <ion-button expand="block" color="danger" (click)="presentAlert()" class="ion-margin-bottom">
+    <ion-icon name="alert-circle-outline" slot="start"></ion-icon>
+    Show Alert Message
+  </ion-button>
+
+  <ion-text color="primary"><h2>Video Showcase</h2></ion-text>
+  <ion-card>
+    <div style="background: #000; line-height: 0;">
+      <video controls width="100%" poster="https://vjs.zencdn.net/v/oceans.png">
+        <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+      </video>
+    </div>
+  </ion-card>
+
+  <ion-text color="primary"><h2>Settings & Forms</h2></ion-text>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-label>Dark Mode</ion-label>
+      <ion-toggle [checked]="isDarkMode" (ionChange)="toggleDarkMode($event)"></ion-toggle>
+    </ion-item>
+    <ion-item><ion-input label="Full Name" value="ABDOU" labelPlacement="stacked"></ion-input></ion-item>
+    <ion-item><ion-checkbox slot="start">Accept Rules</ion-checkbox></ion-item>
+    <ion-item><ion-range label="Brightness"></ion-range></ion-item>
+    <ion-item>
+      <ion-select label="Villes" placeholder="Select a city">
+        <ion-select-option value="casa">Casablanca</ion-select-option>
+        <ion-select-option value="moh">Mohammedia</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <div class="ion-padding-vertical">
+    <ion-chip color="secondary"><ion-label>Ionic 8</ion-label></ion-chip>
+    <ion-chip color="success"><ion-label>Angular</ion-label></ion-chip>
+    <ion-badge color="warning">SDDI4</ion-badge>
+  </div>
+
+  <div class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://picsum.photos/300?1" alt="Gallery 1">
+      <img src="https://picsum.photos/300?2" alt="Gallery 2">
+      <img src="https://picsum.photos/300?3" alt="Gallery 3">
+      <img src="https://picsum.photos/300?4" alt="Gallery 4">
+    </div>
+  </div>
+
+  <!-- Stats Widgets -->
+  <div class="widgets-grid">
+    <div class="small-widget blue">
+      <ion-icon name="wallet-outline"></ion-icon>
+      <h2>$12,430</h2>
+      <p>Balance</p>
+    </div>
+
+    <div class="small-widget purple">
+      <ion-icon name="trending-up-outline"></ion-icon>
+      <h2>+18%</h2>
+      <p>Growth</p>
+    </div>
+
+    <div class="small-widget green">
+      <ion-icon name="people-outline"></ion-icon>
+      <h2>3.2K</h2>
+      <p>Users</p>
+    </div>
+
+    <div class="small-widget orange">
+      <ion-icon name="flash-outline"></ion-icon>
+      <h2>98%</h2>
+      <p>Performance</p>
+    </div>
+  </div>
+
+</ion-content>

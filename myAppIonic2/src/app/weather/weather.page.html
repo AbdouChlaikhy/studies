@@ -1,0 +1,99 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Weather Forecast</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="weather-content">
+
+  <div class="weather-container">
+
+    <div class="top-section">
+      <h1>Weather App</h1>
+      <p>Check weather anywhere in the world</p>
+    </div>
+
+    <ion-card class="search-card">
+      <ion-card-content>
+
+        <ion-item lines="none" class="custom-item">
+          <ion-label position="stacked">
+            City Name
+          </ion-label>
+
+          <ion-input
+            [(ngModel)]="city"
+            placeholder="Example: Casablanca">
+          </ion-input>
+        </ion-item>
+
+        <ion-button
+          expand="block"
+          class="search-btn"
+          (click)="getWeather()">
+
+          Search Weather
+
+        </ion-button>
+
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngIf="weatherData" class="weather-card ion-text-center">
+
+      <ion-card-header>
+
+        <div class="flag-container">
+
+          <img
+  class="country-flag"
+  [src]="getFlagUrl()">
+
+        </div>
+
+        <ion-card-title>
+          {{ weatherData.name }}
+        </ion-card-title>
+
+        <ion-card-subtitle>
+          {{ weatherData.weather[0].description }}
+        </ion-card-subtitle>
+
+      </ion-card-header>
+
+      <ion-card-content>
+
+        <img
+          class="weather-icon"
+          [src]="'https://openweathermap.org/img/wn/' + weatherData.weather[0].icon + '@4x.png'"
+        />
+
+        <h1 class="temperature">
+          {{ weatherData.main.temp }}°C
+        </h1>
+
+        <div class="weather-details">
+
+          <div class="detail-box">
+            <h3>Max Temp</h3> 
+            <p>{{ weatherData.main.temp_max }}°C</p>
+          </div>
+
+          <div class="detail-box">
+            <h3>Humidity</h3>
+            <p>{{ weatherData.main.humidity }}%</p>
+          </div>
+
+        </div>
+
+      </ion-card-content>
+
+    </ion-card>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,113 @@
+/* --- Global Page Enhancements --- */
+ion-content {
+  --background: #f8f9fc; /* Soft off-white background for contrast */
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.01em;
+}
+
+/* --- Video Card Styling --- */
+ion-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  margin: 0 0 16px 0;
+  overflow: hidden;
+}
+
+/* --- Settings List --- */
+ion-list {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  margin-bottom: 1rem;
+}
+
+/* --- Gallery Grid --- */
+.gallery-section {
+  margin-top: 1.5rem;
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    gap: 12px;
+
+    img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+
+      &:active {
+        transform: scale(0.96);
+      }
+    }
+  }
+}
+
+/* --- Stats Widgets Grid --- */
+.widgets-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  .small-widget {
+    padding: 20px 16px;
+    border-radius: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease;
+
+    &:active {
+      transform: scale(0.96);
+    }
+
+    ion-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+      opacity: 0.9;
+      background: rgba(255, 255, 255, 0.2);
+      padding: 8px;
+      border-radius: 10px;
+      width: fit-content;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    p {
+      margin: 4px 0 0 0;
+      font-size: 0.85rem;
+      font-weight: 500;
+      opacity: 0.85;
+    }
+  }
+
+  /* Widget Color Gradients */
+  .blue {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  }
+  .purple {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  }
+  .green {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  }
+  .orange {
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  }
+}

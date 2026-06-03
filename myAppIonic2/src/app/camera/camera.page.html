@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Native Camera</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-text-center">
+  <ion-text>
+    <h2>Test Camera Native</h2>
+  </ion-text>
+
+  <!-- Existing Take Picture Button -->
+  <ion-button expand="block" color="success" (click)="takePicture()">
+    <ion-icon name="camera-outline" slot="start"></ion-icon>
+    Take Picture
+  </ion-button>
+
+  <!-- NEW: Hidden Video Input -->
+  <input 
+    type="file" 
+    accept="video/*" 
+    capture="environment" 
+    (change)="onVideoRecorded($event)" 
+    #videoInput 
+    style="display: none;"
+  >
+
+  <!-- NEW: Record Video Button (Triggers the hidden input) -->
+  <ion-button expand="block" color="danger" class="ion-margin-top" (click)="videoInput.click()">
+    <ion-icon name="videocam-outline" slot="start"></ion-icon>
+    Record Video
+  </ion-button>
+
+  <!-- Existing Image Preview -->
+  <ion-card *ngIf="capturedImage" class="ion-margin-top">
+    <ion-img [src]="capturedImage"></ion-img>
+  </ion-card>
+
+  <!-- NEW: Video Preview -->
+  <ion-card *ngIf="capturedVideo" class="ion-margin-top">
+    <video [src]="capturedVideo" controls playsinline></video>
+  </ion-card>
+</ion-content>
